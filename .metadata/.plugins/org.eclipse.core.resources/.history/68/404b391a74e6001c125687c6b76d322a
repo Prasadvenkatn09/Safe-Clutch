@@ -1,0 +1,17 @@
+package com.learning.collection;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Ex_ArrayList {
+
+	public static void main(String[] args) {
+		
+		List<String> listOfNumbers = new ArrayList<>();
+		listOfNumbers.add("Venkat");
+		listOfNumbers.add("Hemanth");
+		listOfNumbers.add("Krishna");
+		listOfNumbers.add("Abhipsa");
+		listOfNumbers.add("Amar");
+	}
+}

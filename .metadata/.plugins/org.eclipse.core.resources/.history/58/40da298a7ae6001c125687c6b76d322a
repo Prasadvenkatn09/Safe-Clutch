@@ -1,0 +1,20 @@
+package com.learning.collection;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class Ex_Map {
+
+	public static void main(String[] args) {
+		Map<Integer, String> idsAndNames = new HashMap<>();
+		idsAndNames.put(101, "Venkat");
+		idsAndNames.put(102, "Hemanth");
+		idsAndNames.put(103, "Krishna");
+		idsAndNames.put(104, "Amar");
+		idsAndNames.put(105, "Abhipsa");
+
+		System.out.println("=====================================");
+		//Iterating using entrySet method
+		System.out.println("Iterating using entrySet method");
+	}
+}

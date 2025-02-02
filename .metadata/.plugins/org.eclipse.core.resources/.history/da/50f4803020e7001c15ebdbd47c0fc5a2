@@ -1,0 +1,12 @@
+package com.learning.comparator;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Ex_TestEmployee {
+
+	public static void main(String[] args) {
+		List<Employee> listOfEmployees = new ArrayList<>();
+		listOfEmployees.add(new Employee(101L,"Venkat",9119210838L,"Guntur",5000L));
+ 	}
+}

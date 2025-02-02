@@ -1,0 +1,16 @@
+package com.learning.exceptions;
+
+public class Ex_ArithmeticException {
+
+	public static void main(String[] args) {
+		try {
+			int a = 5;
+			int b = 0;
+			int c = a/b;
+			System.out.println("The value of c is: "+c);
+		}catch(ArthmeticException e) {
+		
+		}
+		
+	}
+}

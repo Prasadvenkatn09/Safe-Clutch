@@ -1,0 +1,11 @@
+package com.learning.comparator;
+
+public class Employee {
+
+	private Long empId;
+	private String empName;
+	private Long phNo;
+	private String city;
+	private Long salary;
+}
+

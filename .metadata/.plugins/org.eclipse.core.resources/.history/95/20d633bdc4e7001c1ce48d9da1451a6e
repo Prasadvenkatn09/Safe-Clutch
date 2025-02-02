@@ -1,0 +1,19 @@
+package com.learning.orm;
+
+import java.time.LocalDate;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Department dept  = new Department();
+		dept.setDeptId(1L);
+		dept.setDeptName("IT");
+		Employee emp1 = new Employee();
+		emp1.setEmpId(1L);
+		emp1.setEmpName("Hemanth");
+		emp1.setEmail("hemanth@gmail.com");
+		emp1.setSalary(50000D);
+		emp1.setDoj(new LocalDate().now());
+		
+	}
+}

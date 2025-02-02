@@ -1,0 +1,41 @@
+package com.learning.orm;
+
+import java.util.List;
+
+import javax.persistence.OneToMany;
+
+public class Department {
+	
+	private Long deptId;
+	private String deptName;
+	
+	@OneToMany
+	private List<Employee> employees;
+
+	public Long getDeptId() {
+		return deptId;
+	}
+
+	public void setDeptId(Long deptId) {
+		this.deptId = deptId;
+	}
+
+	public String getDeptName() {
+		return deptName;
+	}
+
+	public void setDeptName(String deptName) {
+		this.deptName = deptName;
+	}
+
+	public List<Employee> getEmployees() {
+		return employees;
+	}
+
+	public void setEmployees(List<Employee> employees) {
+		this.employees = employees;
+	}
+	
+	
+
+}

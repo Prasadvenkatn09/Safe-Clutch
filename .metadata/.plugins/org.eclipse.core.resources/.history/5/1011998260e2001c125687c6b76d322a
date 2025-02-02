@@ -1,0 +1,23 @@
+package com.psil.safeclutch.util;
+
+import java.util.HashMap;
+
+public class Test {
+	
+	public static void main(String[] args) {
+		String s = "Spring Tool Suite";
+		char[] arrayOfChar = s.toLowerCase().toCharArray();
+		HashMap<Character,Integer> counter = new HashMap<>();
+		for(Character c: arrayOfChar) {
+			if(!counter.containsKey(c)) {
+				counter.put(c, 1);
+			}
+			else {
+				int i = counter.get(c);
+				i++;
+				counter.put(c, i);
+			}
+		}
+		System.out.println(counter);
+	}
+}

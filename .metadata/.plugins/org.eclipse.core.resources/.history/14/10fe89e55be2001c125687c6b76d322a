@@ -1,0 +1,15 @@
+package com.psil.safeclutch.util;
+
+public class Test {
+	
+	public static void main(String[] args) {
+		int num = 567;
+		int rem;
+		int reverse = 0;
+		while(num!=0) {
+			rem = num%10;
+			reverse = rem + reverse*10;
+			num /=10;
+		}
+	}
+}

@@ -1,0 +1,8 @@
+package com.learning.exceptions;
+
+public class Ex_ArithmeticException {
+
+	public static void main(String[] args) {
+		
+	}
+}

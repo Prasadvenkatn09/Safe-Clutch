@@ -1,0 +1,18 @@
+package com.learning.collection;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Ex_ArrayList {
+
+	public static void main(String[] args) {
+		
+		List<String> listOfNumbers = new ArrayList<>();
+		listOfNumbers.add(1);
+		listOfNumbers.add(2);
+		listOfNumbers.add(3);
+		listOfNumbers.add(4);
+		listOfNumbers.add(5);
+		listOfNumbers.add(6);
+	}
+}

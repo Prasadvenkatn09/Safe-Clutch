@@ -1,0 +1,20 @@
+package com.learning.exceptions;
+
+public class Ex_CustomException {
+	
+	public static void findUser(Long userId) {
+		//write logic 
+		
+		throw new UserNotFoundException("User Not Found");
+	}
+	public static void main(String[] args) {
+		
+		try {
+			findUser(1L);
+		}catch(UserNotFoundException e) {
+			e.printStackTrace();
+		}
+		
+	}
+
+}

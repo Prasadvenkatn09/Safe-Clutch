@@ -1,0 +1,9 @@
+package com.psil.safeclutch.util;
+
+public class Test {
+	
+	public static void main(String[] args) {
+		String s = "Spring Tool Suite";
+		
+	}
+}

@@ -1,0 +1,6 @@
+package com.learning.orm;
+
+@Entity
+public class Employee {
+
+}

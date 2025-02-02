@@ -1,0 +1,25 @@
+package com.learning.exceptions;
+
+import java.io.IOException;
+
+public class Ex_PropogationExceptionChecked {
+
+	public void method1() throws IOException {
+		throw new IOException("IOException Occured");
+	}
+
+	public void method2() throws IOException {
+		method1();
+	}
+
+	public void method3() throws IOException {
+		method2();
+	}
+
+	public static void main(String[] args) {
+		Ex_PropogationExceptionChecked obj = new Ex_PropogationExceptionChecked();
+		obj.method3();
+		System.out.println("Normal Flow of the program");
+	}
+
+}

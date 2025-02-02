@@ -1,0 +1,21 @@
+package com.learning.comparator;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
+public class Ex_TestEmployee {
+
+	public static void main(String[] args) {
+		List<Employee> listOfEmployees = new ArrayList<>();
+		listOfEmployees.add(new Employee(105L,"Venkat",9119210838L,"Guntur",5000L));
+		listOfEmployees.add(new Employee(102L,"Hemanth",7032721783L,"Hyderabad",6000L));
+		listOfEmployees.add(new Employee(103L,"Krishna",9123435645L,"Pune",9000L));
+		listOfEmployees.add(new Employee(101L,"Amar",1234567890L,"Delhi",10000L));
+		listOfEmployees.add(new Employee(104L,"Abhipsa",25454356653L,"Bhuvaneswar",4500L));
+		
+		Collections.sort(listOfEmployees);
+		
+		System.out.println(listOfEmployees);
+ 	}
+}

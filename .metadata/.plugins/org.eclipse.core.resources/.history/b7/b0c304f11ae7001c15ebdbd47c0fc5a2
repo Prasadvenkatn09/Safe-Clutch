@@ -1,0 +1,16 @@
+package com.learning.exceptions;
+
+import java.io.IOException;
+
+public class Ex_PropogationExceptionChecked {
+	
+	public void method1() throws IOException{
+		throw new IOException("IOException Occured");
+	}
+	
+	
+	public static void main(String[] args) {
+		
+	}
+
+}

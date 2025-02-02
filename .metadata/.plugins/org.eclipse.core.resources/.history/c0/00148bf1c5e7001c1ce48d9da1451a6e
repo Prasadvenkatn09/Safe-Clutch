@@ -1,0 +1,32 @@
+package com.learning.orm;
+
+import java.time.LocalDate;
+import java.util.Arrays;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Department dept  = new Department();
+		dept.setDeptId(1L);
+		dept.setDeptName("IT");
+		Employee emp1 = new Employee();
+		emp1.setEmpId(1L);
+		emp1.setEmpName("Hemanth");
+		emp1.setEmail("hemanth@gmail.com");
+		emp1.setSalary(50000D);
+		emp1.setDoj(LocalDate.now());
+		emp1.setDepartment(dept);
+		
+		Employee emp2 = new Employee();
+		emp2.setEmpId(2L);
+		emp2.setEmpName("Venkat");
+		emp2.setEmail("venkat@gmail.com");
+		emp2.setSalary(40000D);
+		emp2.setDoj(LocalDate.now());
+		emp2.setDepartment(dept);
+		
+		dept.setEmployees(Arrays.asList(emp1,emp2));
+		
+		System.out.println(dept.getEmployees());
+	}
+}

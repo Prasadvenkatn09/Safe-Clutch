@@ -1,0 +1,82 @@
+package com.learning.orm;
+
+import java.time.LocalDate;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.ManyToOne;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="employee_table",uniqueConstraints = { @javax.persistence.UniqueConstraint(columnNames = "email")})
+public class Employee {
+
+	@Id
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	@Column(name="employee_id")
+	private Long empId;
+	@Column(name="employee_name", nullable=false)
+	private String empName;
+	@Column(name="email")
+	private String email;
+	@Column(name="date_of_joining")
+	private LocalDate doj;
+	@Column(name="salary")
+	private Double salary;
+	
+	@ManyToOne
+	private Department department;
+
+	public Long getEmpId() {
+		return empId;
+	}
+
+	public void setEmpId(Long empId) {
+		this.empId = empId;
+	}
+
+	public String getEmpName() {
+		return empName;
+	}
+
+	public void setEmpName(String empName) {
+		this.empName = empName;
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+	public LocalDate getDoj() {
+		return doj;
+	}
+
+	public void setDoj(LocalDate doj) {
+		this.doj = doj;
+	}
+
+	public Double getSalary() {
+		return salary;
+	}
+
+	public void setSalary(Double salary) {
+		this.salary = salary;
+	}
+
+	public Department getDepartment() {
+		return department;
+	}
+
+	public void setDepartment(Department department) {
+		this.department = department;
+	}
+	
+	
+}

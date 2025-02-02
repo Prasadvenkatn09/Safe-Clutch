@@ -1,0 +1,12 @@
+package com.learning.orm;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Department dept  = new Department();
+		dept.setDeptId(1L);
+		dept.setDeptName("IT");
+		Employee emp1 = new Employee();
+		
+	}
+}

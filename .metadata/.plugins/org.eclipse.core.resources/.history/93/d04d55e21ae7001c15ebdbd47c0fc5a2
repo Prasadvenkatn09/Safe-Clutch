@@ -1,0 +1,14 @@
+package com.learning.exceptions;
+
+public class Ex_PropogationExceptionChecked {
+	
+	public void method1() {
+		
+	}
+	
+	
+	public static void main(String[] args) {
+		
+	}
+
+}

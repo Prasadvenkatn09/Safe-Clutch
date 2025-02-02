@@ -1,0 +1,16 @@
+package com.learning.exceptions;
+
+public class Ex_PropagationException {
+
+	public void divideByZero(int num) {
+		
+	}
+	
+	public void divide() {
+		
+	}
+	public static void main(String[] args) {
+		Ex_PropagationException obj = new Ex_PropagationException();
+		
+	}
+}
